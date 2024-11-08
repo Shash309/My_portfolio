@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSA Portfolio - Shashwat Sharma (RA2311026010121)</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #E0E0E0; /* Light gray text for contrast */
+      background-color: #121212; /* Dark gray background */
+      margin: 0;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #1E1E1E; /* Charcoal gray for navigation */
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2em; /* Increased gap for better spacing */
+    }
+
+    nav ul li a {
+      color: #E0E0E0; /* Light gray for links */
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #BB86FC; /* Purple on hover */
+    }
+
+    /* Sections */
+    .section {
+      padding: 40px 15px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      background-color: #1F1F1F; /* Dark gray for sections */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Dark shadow */
+    }
+
+    h1, h2 {
+      color: #FFFFFF; /* White for headings */
+      margin-bottom: 20px;
+    }
+
+    /* Home Section */
+    .name-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      flex-direction: column;
+    }
+
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 20px;
+      border: 4px solid #BB86FC; /* Purple border */
+      transition: transform 0.3s;
+    }
+
+    .profile-image:hover {
+      transform: scale(1.1); /* Scale effect on hover */
+    }
+
+    /* About Section */
+    #about p {
+      text-align: justify;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #B0BEC5; /* Light gray for paragraph text */
+    }
+
+    /* Skills Section */
+    #skills ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    #skills ul li {
+      background-color: #2E2E2E; /* Dark slate gray for skills */
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    #skills ul li:hover {
+      background-color: #BB86FC; /* Highlight on hover */
+    }
+
+    /* Projects Section */
+    .project {
+      background-color: #232323; /* Very dark gray for project cards */
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Dark shadow for depth */
+      text-align: left;
+    }
+
+    /* Contact Section */
+    #contact a {
+      color: #BB86FC; /* Purple for links */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #contact a:hover {
+      color: #FFFFFF; /* White on hover for contrast */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1E1E1E; /* Match footer with navigation */
+      color: #E0E0E0; /* Light gray for footer text */
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer a {
+      color: #BB86FC; /* Purple for links */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #FFFFFF; /* White on hover for contrast */
+    }
+
+    /* Social Media Icons */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .social-icon {
+      margin: 0 10px;
+      font-size: 24px;
+      color: #E0E0E0; /* Light gray for icons */
+      transition: color 0.3s;
+    }
+
+    .social-icon:hover {
+      color: #BB86FC; /* Purple on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="name-container">
+      <h1>Shashwat Sharma</h1>
+      <img src="IMG_20230702_014309_371.jpg" alt="Shashwat Sharma" class="profile-image">
+    </div>
+    <p>2nd Year B.Tech CSE (AI-ML) student at SRMIST Kattankulatur, passionate about Data Structures and Algorithms.</p>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am Shashwat Sharma, a second-year B.Tech CSE (AI-ML) student with a strong passion for problem-solving and growing expertise in Data Structures and Algorithms (DSA). My journey in computer science started with curiosity about technology and has grown into a deep interest in creating efficient solutions for complex problems. This portfolio showcases my projects, coding challenges, and insights into DSA topics.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Data Structures: Arrays, Linked Lists, Trees, Graphs</li>
+      <li>Algorithms: Sorting, Searching, Dynamic Programming</li>
+      <li>Languages: C, C++, Java, Python</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project 1: Hospital Management System</h3>
+      <p>This is a Hospital Management System project developed using Java and JDBC (Java Database Connectivity) to manage and automate various operations in a hospital. The system enables different users, such as Admins, Doctors, and Receptionists, to log in and perform specific role-based actions such as managing patients, appointments, and hospital staff efficiently. You can view the source code on <a href="" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+    </div>
+    <div class="project">
+      <h3>Project 2: [Zephyr Odyssey]</h3>
+      <p>[Built a dynamic, visually engaging website for the game Zephyr Odyssey using HTML, CSS, and
+        JavaScript. Designed to showcase the games unique features, storyline, and challenges, the website
+        includes responsive layouts and interactive elements to enhance user immersion. Focused on creating a
+        seamless browsing experience, optimized for both desktop and mobile devices]</p>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+<section id="certificates" class="section">
+  <h2>Certificates</h2>
+  <div class="certificate">
+    <span>Certificate of participation in Smart India Hackathon</span>
+    <a href="Screenshot 2024-11-02 233545.png" target="_blank" rel="noopener noreferrer">View Certificate</a>
+  </div>
+  <div class="certificate">
+    <span>Certificate in Python programming</span>
+    <a href="UC-808eb5a3-c93f-4519-b935-d39db938edf5.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+  </div>
+  <div class="certificate">
+    <span>Certificate in C programming</span>
+  </div>
+  <!-- Add more certificates as needed -->
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Reach me via <a href="mailto:ss5429@srmist.edu.in">Email</a> or connect on <a href="https://www.linkedin.com/in/shashwat-sharma-042950288/" target="_blank" rel="noopener noreferrer">LinkedIn</a> or <a href="https://github.com/Shash309" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/shashwat-sharma-042950288/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Shash309" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Shashwat Sharma. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/shashwat-sharma-042950288/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+      
+      <a href="https://github.com/Shash309" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
